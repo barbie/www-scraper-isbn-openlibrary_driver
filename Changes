@@ -2,6 +2,7 @@ Revision history for WWW-Scraper-ISBN-OpenLibrary_Driver
 ========================================================
 
         - added git repository links to metadata.
+        - test links now use https.
 
 0.06    2013-05-19
         - updated format & dimension patterns due to website changes.
