@@ -3,6 +3,7 @@ Revision history for WWW-Scraper-ISBN-OpenLibrary_Driver
 
         - fixed distribution name in META.
         - upgrade to WWW-Scraper-ISBN-1.00.
+        - extended test suite.
 
 0.07    2013-11-08
         - added git repository links to metadata.
