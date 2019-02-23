@@ -146,8 +146,8 @@ sub search {
 
     # catch any data not in the JSON
     ($data->{height},$data->{width},$data->{depth})    
-                                        = $html =~ m!<td class="title"><span class="title">Dimensions</span></td>\s*<td><span class="object">([\d.]+)\s+x\s+([\d.]+)\s+x\s+([\d.]+)\s+inches!i;
-    ($data->{binding})                  = $html =~ m!<td class="title"><span class="title">Format</span></td>\s*<td><span class="object">([^<]+)!i;
+                                        = $html =~ m!<dt>Dimensions</dt>\s*<dd class="object">([\d.]+)\s+x\s+([\d.]+)\s+x\s+([\d.]+)\s+inches!si;
+    ($data->{binding})                  = $html =~ m!<dt>Format</dt>\s*<dd class="object">([^<]+)!si;
 
     $data->{height} = int($data->{height} * IN2MM)  if($data->{height});
     $data->{width}  = int($data->{width}  * IN2MM)  if($data->{width});
